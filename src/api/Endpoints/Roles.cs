@@ -35,7 +35,7 @@ namespace Microsoft.UsEduCsu.Saas
 					.ToArray();
 
 				log.LogInformation($"Assigning {additionalRoles.Length} additional role(s) '{string.Join(',', additionalRoles)}' to '{it.UserDetails}'.");
-
+				log.LogTrace($"AccessToken: {it.AccessToken}");
 				rr.Roles = additionalRoles;
 			}
 
